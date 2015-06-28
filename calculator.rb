@@ -3,7 +3,7 @@ def get_num
   while true
     puts "Enter a number:"
     num = gets.chomp
-    if !(num =~ /^\d+$/) && !(num1 =~ /\d+\.\d+/) # not an int or a float
+    if !(num =~ /^\d+$/) && !(num1 =~ /\d+\.\d+/) # regex to confirm int or a float
       puts "That's not a valid number"
     else
       break
