@@ -1,7 +1,9 @@
+
+
 # method for getting input
-def get_num
+def get_num(msg)
   while true
-    puts "Enter a number:"
+    puts "#{msg}"
     num = gets.chomp
     if !(num =~ /^\d+$/) && !(num1 =~ /\d+\.\d+/) # regex to confirm int or a float
       puts "That's not a valid number"
@@ -14,8 +16,8 @@ end
 
 loop do
 
-  num1 = get_num
-  num2 = get_num
+  num1 = get_num("Enter a number:")
+  num2 = get_num("Enter another number:")
 
   while true
     puts "------------------------------------------"
